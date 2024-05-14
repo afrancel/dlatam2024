@@ -1,0 +1,103 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container, header, footer{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #e6e6e6;    
+}
+.container{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    height: 100vh;
+}
+header{
+    grid-area:header;
+    text-align: center;
+    padding: 1em;
+    color: orange;
+}
+.sidebar{
+    grid-area:sidebar;
+    display:flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-left: 2em;
+    margin-top: 2em;    
+}
+.titulocat{
+    text-align: left;
+    margin-bottom: 1em;
+}
+ul.menu{
+    list-style:square;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-left: 1.5em;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: orange;
+}
+main{
+    grid-area:main;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:10px;
+    padding: 1em;
+}
+.producto{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
+}
+.producto:hover{
+    background-color: #e6e6e6;
+}
+.tituloproducto, .precio, button{
+    text-align: center;
+    padding: 0.5em 0em;
+}
+.tituloproducto{
+    text-align: center;
+    padding: 0.5em 0em;
+    font-size: 1em;
+}
+.producto img{
+    width: 100%;
+    border-radius: 100%;
+}
+button{
+    background-color:#25527b;
+    color: white;
+    border-radius:10px;
+    border: 0px;
+}
+button:hover{
+    background-color: orange;
+}
+footer{
+    grid-area:footer;
+    text-align: center;
+    padding: 0.5em;
+    background-color: darkgray;
+}
