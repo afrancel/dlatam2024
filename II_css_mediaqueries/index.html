@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Avanzado: Flex / Grid / Areas </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/358f030a6e.js" crossorigin="anonymous"></script>
+   <!-- boostrap -->
+   
+    <!-- fonts google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+</head>
+<body>
+
+    <!-- contenedor ppal -->
+    <div class="container">     
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <!-- Header -->
+            <header>
+                <div class="logo">
+                    <h2><i class="fa-solid fa-bicycle"></i> POLYGON BIKES</h2>
+                </div>
+                <div class="menu-movil">
+                    <a href=""><i class="fa-solid fa-bars"></i></a>
+                </div>
+                
+            </header>
+
+            <!-- menu -->
+            <ul class="menu">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <li><a href="#">OFERTAS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+
+            <!-- footer -->
+            <footer>
+                <div class="creditos">
+                    Desarrollo <a href="https://afrancel.com/" target="_blank">afrancel | ѷ</a>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- main -->
+        <main>
+
+            <!-- order by-->
+            <div class="producto_order_by">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Ordenar por:</option>
+                    <option value="1">Precio</option>
+                    <option value="2">Nombre</option>
+                    <option value="3">Opiniones</option>
+                  </select>
+            </div>
+            
+
+            <!-- productos -->
+            <div class="products">
+
+                <div class="producto">
+                    <img src="./assets/img/SISKIU_T6_CRC_BLK.jpg" alt="">
+                    <h3 class="tituloproducto">BICICLETA MTB POLYGON SISKIU T8 PRP/BLK</h3>
+                    <div class="precio">$2.399.000</div>
+                    <button>Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="./assets/img/SISKIU_T7E_OLIVE.jpg" alt="">
+                    <h3 class="tituloproducto">BICICLETA MTB POLYGON SISKIU T6 CRC/BLK</h3>
+                    <div class="precio">$1.199.000</div>
+                    <button>Comprar</button>                
+                </div>
+                <div class="producto">
+                    <img src="./assets/img/SISKIU_T8_PRP_BLK.jpg" alt="">
+                    <h3 class="tituloproducto">BICICLETA MTB POLYGON SISKIU T7E OLIVE</h3>
+                    <div class="precio">$3.591.000</div>
+                    <button>Comprar</button>                
+                </div>
+                <div class="producto">
+                    <img src="./assets/img/SISKIU_T8_PRP_BLK.jpg" alt="">
+                    <h3 class="tituloproducto">BICICLETA MTB POLYGON SISKIU T7E OLIVE</h3>
+                    <div class="precio">$3.591.000</div>
+                    <button>Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="./assets/img/SISKIU_T6_CRC_BLK.jpg" alt="">
+                    <h3 class="tituloproducto">BICICLETA MTB POLYGON SISKIU T8 PRP/BLK</h3>
+                    <div class="precio">$2.399.000</div>
+                    <button>Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="./assets/img/SISKIU_T7E_OLIVE.jpg" alt="">
+                    <h3 class="tituloproducto">BICICLETA MTB POLYGON SISKIU T6 CRC/BLK</h3>
+                    <div class="precio">$1.199.000</div>
+                    <button>Comprar</button>                
+                </div>
+                <div class="producto">
+                    <img src="./assets/img/SISKIU_T8_PRP_BLK.jpg" alt="">
+                    <h3 class="tituloproducto">BICICLETA MTB POLYGON SISKIU T7E OLIVE</h3>
+                    <div class="precio">$3.591.000</div>
+                    <button>Comprar</button>                
+                </div>
+                <div class="producto">
+                    <img src="./assets/img/SISKIU_T8_PRP_BLK.jpg" alt="">
+                    <h3 class="tituloproducto">BICICLETA MTB POLYGON SISKIU T7E OLIVE</h3>
+                    <div class="precio">$3.591.000</div>
+                    <button>Comprar</button>
+                </div>                
+            </div>
+
+            <!-- paginacion -->
+            <div class="producto_paginacion">
+                <div class="paginacion"><a href="#"><<</a></div>
+                <div class="paginacion"><a href="#">1</a></div>
+                <div class="paginacion"><a href="#">2</a></div>
+                <div class="paginacion"><a href="#">>></a></div>
+            </div>
+        </main>
+        
+    </div>
+</body>
+</html>
