@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4_colores</title>
+    <style>
+      .container {
+        width: 80%;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        text-align: center;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box1" class="box" style="background-color: blue"></div>
+      <div id="box2" class="box" style="background-color: red"></div>
+      <div id="box3" class="box" style="background-color: green"></div>
+      <div id="box4" class="box" style="background-color: yellow"></div>
+    </div>
+
+    <script>
+      function cambiar_color(event) {
+        event.target.style.backgroundColor = "black";
+      }
+      document.getElementById("box1").addEventListener('click', cambiar_color);
+      document.getElementById("box2").addEventListener('click', cambiar_color);
+      document.getElementById("box3").addEventListener('click', cambiar_color);
+      document.getElementById("box4").addEventListener('click', cambiar_color);       
+
+    </script>
+  </body>
+</html>
