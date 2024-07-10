@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 06 | Métodos de arreglos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="mb-5">
+            <form>
+                <h2>Centro de Tareas</h2>
+                <div class="form-group">
+                    <label for="formtask">¿Qué tarea desea agregar?</label>
+                    <input type="text" class="form-control" id="formtask" placeholder="Apartment, studio, or floor">
+                </div>
+                <button id="formBtnAddTask" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+
+        <h2>Tareas registradas</h2>
+        <div id="taskCounts">
+            <p>Total de tareas: <span id="totalTasks"></span></p>
+            <p>Tareas seleccionadas: <span id="selectedTasks"></span></p>
+        </div>
+        <div id="tableTask"></div>
+    </div>
+    
+    <script defer type="module" src="./assets/js/js.js"></script>
+</body>
+</html>

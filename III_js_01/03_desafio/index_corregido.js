@@ -6,9 +6,11 @@ var valorTotal = precio*cantidad;
 //dom
 let precioSpan = document.querySelector(".precio-inicial");
 var getCantidad = document.querySelector('.cantidad');
-var getplusud = document.getElementById('plus_units');
+var getplusud = document.querySelector('#plus_units');
 var getminusud = document.getElementById('minus_units');
 let getvalorTotal = document.querySelector('.valor_total')
+
+console.log('getplusud',getplusud)
 
 /*Hola Everto, gracias por tus observaciones siempre. Duda.
 ¿por qué uso en la línea 8 y 9 ".getElementById" ó "querySelector" y funciona igual
@@ -28,7 +30,7 @@ getvalorTotal.innerHTML = valorTotal;
 mensaje = "Disculpa, no se puede disminuir más.\nYa estás en la cantidad mínima";
 
 //operations
-plus_units.addEventListener('click', () =>{
+getplusud.addEventListener('click', () =>{
     cantidad++;
     valorTotal = precio*cantidad;
     getCantidad.innerHTML = cantidad;
