@@ -1,4 +1,4 @@
-import tasks from "./data.js"; // Asegúrate de que la ruta y extensión sean correctas
+import tasks from "./data.js";
 
 const inputTask = document.querySelector('#formtask');
 const btnAddTask = document.querySelector('#formBtnAddTask');
@@ -6,15 +6,17 @@ const tableTask = document.querySelector("#tableTask");
 const totalTasksElement = document.querySelector('#totalTasks');
 const selectedTasksElement = document.querySelector('#selectedTasks');
 
+//boton enviar task
 btnAddTask.addEventListener("click", (event) => {
-    event.preventDefault(); // Evita que el formulario se envíe
+    event.preventDefault();
 
     const newTask = { id: Date.now(), Tarea: inputTask.value, selected: false };
     tasks.push(newTask);
-    inputTask.value = ""; // Limpia el campo de entrada
+    inputTask.value = "";
     updateList();
 });
 
+//actualizar lista tareas
 function updateList() {
     let listTask = `
         <table class="table">
@@ -48,7 +50,7 @@ function updateList() {
     tableTask.innerHTML = listTask;
     updateCounts();
 }
-
+//borrar tareas
 window.deleteTask = function(id) {
     const index = tasks.findIndex((task) => task.id === id);
     if (index !== -1) {
@@ -56,7 +58,7 @@ window.deleteTask = function(id) {
         updateList();
     }
 };
-
+//verificar selects
 window.toggleSelect = function(id, selected) {
     const task = tasks.find((task) => task.id === id);
     if (task) {
@@ -64,7 +66,7 @@ window.toggleSelect = function(id, selected) {
         updateCounts();
     }
 };
-
+//actualizar numeros
 function updateCounts() {
     const totalTasks = tasks.length;
     const selectedTasks = tasks.filter(task => task.selected).length;
